@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
 import "./styles/custom.css";
 
-
 export const metadata: Metadata = {
   title: "Lumo Winterfest",
   description: "Lumo Winter Season Fashion Launch",
+  icons: {
+    icon: "/favicon.png", // Specify the path to your favicon
+  },
 };
 
 export default function RootLayout({
@@ -20,3 +22,4 @@ export default function RootLayout({
     </html>
   );
 }
+

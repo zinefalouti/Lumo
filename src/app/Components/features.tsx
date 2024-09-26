@@ -13,7 +13,7 @@ export default function features(){
                  <FeatureBlock Title="Tailored Fit" Subtitle="Designed for Every Body" Text="Our Winterfest clothing line features inclusive sizing and tailored fits, making it easy to find pieces that flatter and move with you. Comfort and confidence come standard with every item." Icon="/feature3.png" IconAlt="Lumo Tailored Fit"/>
             </div>
             <div className="col-span-12 md:col-span-6 lg:col-span-3 md:flex md:items-stretch">
-                 <FeatureBlock Title="Versatile Style" Subtitle="Seamless Transition " Text="Whether you're heading to the office or exploring the outdoors, Lumo’s Winterfest collection blends functionality with sleek design. Layer effortlessly for any occasion, making every outfit a statement in warmth and style." Icon="/feature4.png" IconAlt="Versatile Style"/>
+                 <FeatureBlock Title="Versatile Style" Subtitle="Seamless Transition " Text="Whether you&apos;re heading to the office or exploring the outdoors, Lumo’s Winterfest collection blends functionality with sleek design. Layer effortlessly for any occasion, making every outfit a statement in warmth and style." Icon="/feature4.png" IconAlt="Versatile Style"/>
             </div>
         </div>
     );

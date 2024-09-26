@@ -1,5 +1,5 @@
-import FleetLgBlock from './fleetLgBlock';
-import Image from 'next/image';
+import FleetLgBlock from "./fleetLgBlock";
+import Image from "next/image";
 
 export default function fleet(){
     return(

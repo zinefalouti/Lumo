@@ -8,7 +8,7 @@ export default function Discount() {
           {/* Empty grid column to balance layout */}
         </div>
         <div className="col-span-12 lg:col-span-6">
-          <h4>Don't miss out on exclusive savings!</h4>
+          <h4>Don&apos;t miss out on exclusive savings!</h4>
           <h1>
             <span>35%</span> Discount on Launch Day
           </h1>
