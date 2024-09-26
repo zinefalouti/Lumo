@@ -11,7 +11,7 @@ export default function Contact() {
       <div className="contact container mx-auto mt-8 lg:mt-16" id="contact">
         <div className="grid contacthead grid-cols-12 gap-4"> 
           <div className="col-span-12 lg:col-span-8">
-            <h4>Join This Year's Winter Fest Show</h4>
+            <h4>Join This Year&apos;s Winter Fest Show</h4>
             <h1>Book a Spot</h1>
           </div>
           <div className="col-span-4 hidden lg:block justify-self-end">
@@ -58,7 +58,7 @@ export default function Contact() {
           </div>
           <div className="col-span-12">
             <div className={`inputzone ${focusedInput === 'social' ? 'focused' : ''}`}>
-              <label>If you're an influencer, please share your youtube or tiktok url</label>
+              <label>If you&apos;re an influencer, please share your youtube or tiktok url</label>
               <input
                 type="text"
                 placeholder="Eg. https://www.youtube.com/dressigngwithhannah"
