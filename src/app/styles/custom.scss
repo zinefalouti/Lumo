@@ -1,0 +1,492 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import 'mixins';
+
+$TextColor:#333C4F;
+$HighLightColor:#479CFC;
+$BgColor:#ffffff;
+$SoftColor:#9697AB;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Montserrat;
+  font-size: 1rem;
+  background-color: #f9f9f9;
+
+  h1{
+    @include textController(2.6rem,900,0,$TextColor,uppercase);
+    span{
+      color:$HighLightColor;
+    }  
+  }
+
+  h4{
+    @include textController(0.76rem,900,3px,$SoftColor,uppercase);
+  }
+
+  p{
+    @include textController(1rem,400,0,$TextColor,none);
+  }
+
+  a{
+    @include textController(0.76rem,900,3px,$HighLightColor,uppercase);
+  }
+
+  a:hover{
+    color:$SoftColor;
+    transition: 0.6s ease-in-out;
+    img{
+      opacity:0.5;
+    }
+  }
+  
+}
+
+
+.hero{
+  background-image: url("/herobg.jpg");
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-color: $BgColor;
+  padding:40px 40px 0px 40px;
+  border-radius:0px 0px 40px 40px;
+}
+
+.navbar {
+  padding: 20px 20px;
+  display: flex;
+  justify-content: space-evenly; /* Distributes items evenly */
+  align-items: center; /* Centers items vertically */
+}
+
+.nav-item{
+  @include textController(0.76rem,700,1px,$TextColor,uppercase);
+}
+
+.nav-item:hover{
+  scale:1.13;
+  transition:0.6s ease-in-out;
+}
+
+.lumobutton{
+
+ 
+
+  a{
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+    @include textController(0.76rem,700,0px,$BgColor,uppercase);
+    background-color: $TextColor;
+    padding:20px 20px 20px 40px;
+    border-radius:40px;
+    margin-top:10px;
+  }
+
+  a:hover{
+    scale:1.13;
+    transition:0.6s ease-in-out;
+  }
+
+}
+
+.hamburger{
+  position:flex;
+  margin-left:auto;
+  cursor: pointer;
+
+  img:hover{
+    scale:1.13;
+    transition: 0.6s ease-in-out;
+  }
+
+}
+
+.navbarmobile{
+ 
+  background-color: $HighLightColor;
+  padding:40px;
+  border-radius:40px 0px 0px 40px;
+  box-shadow: 3px 1px 14px 0px rgba(71, 71, 71, 0.34);
+  -webkit-box-shadow: 3px 1px 14px 0px rgba(71, 71, 71, 0.34);
+  -moz-box-shadow: 3px 1px 14px 0px rgba(71, 71, 71, 0.34);
+
+  a{
+    @include textController(1.2rem,700,3px,$BgColor,uppercase);
+  }
+
+}
+
+
+
+.feature{
+  @include divMaker($BgColor,40px);
+
+  h2{
+    @include textController(1.36rem,700,0,$TextColor,none);
+  }
+
+  p{
+    font-size:0.9rem;
+  }
+
+}
+
+.feature:hover{
+  scale:1.03;
+  transition: 0.6s ease-in-out;
+}
+
+
+.headerscroll{
+  background-color: $BgColor;
+  padding:40px;
+  border-radius:0px 0px 40px 40px;
+  box-shadow: 3px 1px 14px 0px rgba(71, 71, 71, 0.34);
+  -webkit-box-shadow: 3px 1px 14px 0px rgba(71, 71, 71, 0.34);
+  -moz-box-shadow: 3px 1px 14px 0px rgba(71, 71, 71, 0.34);
+}
+
+
+.discount{
+  @include divMaker($TextColor,40px);
+  position:relative;
+
+  h1{
+    @include textController(3rem,900,0,$BgColor,uppercase);
+    margin-top:20px;
+    span{
+      font-size:4.3rem;
+    }
+  }
+
+  a{
+    background-color:$HighLightColor;
+    padding:20px;
+    border-radius:40px;
+    color:$BgColor;
+    display:flex;
+    margin-top:20px;
+    width:50%;
+    justify-content: space-around;
+  }
+
+  a:hover{
+    scale:1.13;
+    transition:0.6s ease-in-out;
+    color:$BgColor;
+  }
+
+}
+
+
+.fleetblock{
+   background-color: $BgColor;
+   border-radius:40px;
+   box-shadow: 3px 1px 14px 0px rgba(71, 71, 71, 0.34);
+  -webkit-box-shadow: 3px 1px 14px 0px rgba(71, 71, 71, 0.34);
+  -moz-box-shadow: 3px 1px 14px 0px rgba(71, 71, 71, 0.34);
+
+  h2{
+    @include textController(2rem,700,0,$TextColor,none);
+  }
+
+}
+
+.fleetblock:hover{
+  scale:1.063;
+  transition:0.6s ease-in-out;
+}
+
+
+.fleetimg:hover{
+
+  scale:1.13;
+  transition:0.6s ease-in-out;
+  
+}
+
+
+
+
+
+
+
+
+.venue{
+  background-image:url("/venuebg.png");
+  background-size:cover;
+  background-repeat:no-repeat;
+  padding:90px 90px 40px 40px;
+  border-radius:40px;
+  box-shadow: 3px 1px 14px 0px rgba(71, 71, 71, 0.34);
+  -webkit-box-shadow: 3px 1px 14px 0px rgba(71, 71, 71, 0.34);
+  -moz-box-shadow: 3px 1px 14px 0px rgba(71, 71, 71, 0.34);
+
+  h4{
+    color:$BgColor;
+  }
+
+  h1{
+    color:$BgColor;
+  }
+
+  p{
+    color:$BgColor;
+  }
+
+  a{
+    background-color:$HighLightColor;
+    padding:20px;
+    border-radius:40px;
+    color:$BgColor;
+    display:flex;
+    margin-top:5px;
+    width:100%;
+    justify-content: space-around;
+  }
+
+  a:hover{
+    scale:1.13;
+    transition:0.6s ease-in-out;
+    color:$BgColor;
+  }
+
+}
+
+
+.contact{
+  background-color: $BgColor;
+  box-shadow: 3px 1px 14px 0px rgba(71, 71, 71, 0.34);
+  -webkit-box-shadow: 3px 1px 14px 0px rgba(71, 71, 71, 0.34);
+  -moz-box-shadow: 3px 1px 14px 0px rgba(71, 71, 71, 0.34);
+  border-radius:40px;
+
+  button{
+    @include divMaker($HighLightColor,10px);
+    width:100%;
+    @include textController(0.9rem,900,1px,$BgColor,uppercase);
+   }
+
+   button:hover{
+    background-color: $TextColor;
+    transition: 0.6s ease-in-out;
+   }
+
+
+}
+
+.contacthead{
+  @include divMaker($TextColor,40px);
+
+  h4{
+    color:$BgColor;
+  }
+
+  h1{
+    color:$BgColor;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+.inputzone{
+
+  background-color:transparent;
+  border:2px solid $SoftColor;
+  padding:10px 30px 10px 30px;
+  display:block;
+  border-radius:40px;
+
+  input{
+     outline:none;
+     background-color: transparent;
+     color:$TextColor;
+     width:100%;
+     border:none;
+  }
+
+  label{
+    @include textController(0.5rem,900,3px,$SoftColor,uppercase);
+  }
+
+
+
+}
+
+.inputzone.focused{
+  border:3px solid $HighLightColor;
+}
+
+
+
+.footer{
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center elements horizontally */
+
+  h4{
+    @include textController(0.63rem,700,3px,$TextColor,uppercase);
+    margin-top:20px;
+  }
+  
+  hr{
+    border:1px solid $SoftColor;
+    width:60%;
+    margin-top:20px;
+  }
+}
+
+
+
+.social{
+  display: flex; /* Enable flexbox */
+  flex-direction: row; /* Arrange items in a row (default) */
+  align-items: center; /* Align items vertically in the center (optional) */
+}
+
+
+.StickHeader{
+   background-color: $BgColor;
+   padding:40px;
+   box-shadow: 3px 1px 14px 0px rgba(71, 71, 71, 0.34);
+  -webkit-box-shadow: 3px 1px 14px 0px rgba(71, 71, 71, 0.34);
+  -moz-box-shadow: 3px 1px 14px 0px rgba(71, 71, 71, 0.34);
+  border-radius:0px 0px 40px 40px;
+}
+
+
+
+
+
+/* Adjusting on Tablet View */
+
+
+@media  only screen and (max-width:1023px) and (min-width:768px){
+
+
+.nav-item{
+  margin-top:60px;
+}
+
+.hero{
+
+  background-image: none;
+  padding-bottom:40px;
+
+}
+
+.lumobutton{
+
+ 
+
+  a{
+    font-size:0.76rem;
+  }
+
+}
+
+
+.venue{
+ width:90%;
+}
+
+.contact{
+  width:90%;
+}
+
+.discount{
+  width:90%;
+}
+
+}
+
+
+
+
+
+
+/* Adjusting on Mobile View */
+
+@media  only screen and (max-width:767px) and (min-width:0px){
+
+  .nav-item{
+    margin-top:60px;
+  }
+
+  .lumobutton{
+
+    
+
+    a{
+      font-size:0.76rem;
+      justify-content:flex-start;
+    }
+  
+  }
+
+  .hero{
+
+    background-image: none;
+    padding-bottom:40px;
+  
+  }
+
+  .discount{
+    a{
+      width:100%;
+    }
+
+    h1{
+      font-size:2rem;
+      span{
+        font-size:2.3rem;
+      }
+    }
+  }
+
+  .venue{
+    width:90%;
+   }
+   
+   .contact{
+     width:90%;
+   }
+   
+   .discount{
+     width:90%;
+   }
+
+   .navbar{
+    display:flex;
+    flex-direction: column;
+
+   }
+   
+  
+
+
+}
+
+
+
+
+
+
+
+
+

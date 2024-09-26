@@ -1,0 +1,28 @@
+@mixin textController(
+  $FontSize,
+  $FontWeight,
+  $LetterSpacing,
+  $Color,
+  $Transform
+) {
+  font-size: $FontSize;
+  font-weight: $FontWeight;
+  letter-spacing: $LetterSpacing;
+  color: $Color;
+  text-transform: $Transform;
+}
+
+@mixin divMaker($BackgroundColor, $Padding) {
+  background-color: $BackgroundColor;
+  padding: $Padding;
+  border-radius: 20px;
+  box-shadow: 3px 1px 14px 0px rgba(71, 71, 71, 0.34);
+  -webkit-box-shadow: 3px 1px 14px 0px rgba(71, 71, 71, 0.34);
+  -moz-box-shadow: 3px 1px 14px 0px rgba(71, 71, 71, 0.34);
+}
+
+.hamburger{
+   
+   position:relative;
+   float:right;
+}
