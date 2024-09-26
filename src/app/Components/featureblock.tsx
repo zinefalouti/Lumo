@@ -1,6 +1,15 @@
 import Image from "next/image";
 
-export default function featureblock({Title,Subtitle,Text,Icon,IconAlt}){
+// Define the type for props
+interface FeatureBlockProps {
+    Title: string;
+    Subtitle: string;
+    Text: string;
+    Icon: string; // Assuming this is a string representing the image URL
+    IconAlt: string;
+  }
+
+export default function featureblock({Title,Subtitle,Text,Icon,IconAlt}: FeatureBlockProps){
     return(
          <div className="feature flex flex-col justify-between">
             <Image src={Icon} width="100" height="100" alt={IconAlt} />
