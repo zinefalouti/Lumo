@@ -1,6 +1,13 @@
 import Image from "next/image";
 
-export default function fleetLgBlock({ImgSrc,Title, ImgAlt}){
+interface FleetLgBlockProps {
+    ImgSrc: string;
+    Title: string;
+    ImgAlt: string;
+  }
+
+
+export default function fleetLgBlock({ImgSrc,Title, ImgAlt}: FleetLgBlockProps){
     return(
 
 
