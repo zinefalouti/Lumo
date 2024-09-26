@@ -4,7 +4,8 @@ import Image from "next/image";
 import { useState } from "react";
 
 export default function Contact() {
-  const [focusedInput, setFocusedInput] = useState(null);
+  // Update the type to allow string values as well
+  const [focusedInput, setFocusedInput] = useState<null | 'name' | 'email' | 'source' | 'social' | 'reason'>(null);
 
   return (
     <>
